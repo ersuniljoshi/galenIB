@@ -1,0 +1,5 @@
+@import locator.gspec
+= Main Section =
+    @on desktop
+        career-search:
+            css background-color is "#ea1b3c"

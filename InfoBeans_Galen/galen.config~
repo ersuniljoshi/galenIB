@@ -1,0 +1,4 @@
+galen.default.browser=firefox
+$.webdriver.gecko.driver=/home/anujita/Downloads/geckodriver
+$.webdriver.chrome.driver=/home/anujita/Downloads/chromedriver
+
