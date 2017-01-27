@@ -1,0 +1,45 @@
+test("Test on a Desktop for homepage", function(device, browser) {
+	//var browser = System.getProperty("browser");
+	//console.log(browser);
+	var driver = createDriver("http://www.infobeans.com/", "1866x1000", "chrome");
+	
+	checkLayout(driver, "check_header.gspec", "desktop");
+	driver.quit();
+});
+test("Test on a Desktop for automation engineering page", function(device, browser) {
+	var driver = createDriver("http://www.infobeans.com/services/automation-engineering", "1866x1000", "chrome");
+	
+	checkLayout(driver, "auto.gspec", "desktop");
+	driver.quit();
+});
+test("Test on a Desktop for storage page", function(device, browser) {
+	var driver = createDriver("http://www.infobeans.com/verticals/storage-virtualization", "1866x1000", "chrome");
+	
+	checkLayout(driver, "storage.gspec", "desktop");
+	driver.quit();
+});
+test("Test on a mobile for homepage", function(device, browser) {
+	var driver = createDriver("http://www.infobeans.com", "960x540", "chrome");
+	
+	checkLayout(driver, "check_header.gspec", "mobile");
+	driver.quit();
+});
+test("Test on a mobile for automation engineering page", function(device, browser) {
+	var driver = createDriver("http://www.infobeans.com/services/automation-engineering", "960x540", "chrome");
+	
+	checkLayout(driver, "auto.gspec", "mobile");
+	driver.quit();
+});
+test("Test on a mobile for storage page", function(device, browser) {
+	var driver = createDriver("http://www.infobeans.com/verticals/storage-virtualization", "960x540", "chrome");
+	
+	checkLayout(driver, "storage.gspec", "mobile");
+	driver.quit();
+});
+test("Test on a desktop for service page", function(device, browser) {
+	var driver = createDriver("http://www.infobeans.com/services/servicenow", "1866x1000", "chrome");
+	
+	checkLayout(driver, "service.gspec", "desktop");
+	driver.quit();
+});
+

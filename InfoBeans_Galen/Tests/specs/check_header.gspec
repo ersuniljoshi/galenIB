@@ -1,0 +1,22 @@
+@import locator.gspec
+
+= Main section =
+    @on desktop
+        header_logo:
+            inside screen 0px top
+        #para:
+            #inside header-div offset 190px
+        next-slide:
+            below home-line 700 to 750px
+            color-scheme 0% black
+        #toggle:
+	    #color-scheme 3% white, > 30% #ea1b3c
+    #@on mobile
+        #header_logo:
+            #inside screen offset 4px
+        #para:
+            #inside header-div offset 190px
+        #next-slide:
+            #below home-line 300 to 350px
+            #color-scheme 0% black
+    

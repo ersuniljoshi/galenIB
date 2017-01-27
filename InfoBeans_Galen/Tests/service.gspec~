@@ -1,0 +1,7 @@
+@import locator.gspec
+
+= Main section =
+    @on desktop
+        service-text:
+            text is "ServiceNow Implementation"
+            width 90%

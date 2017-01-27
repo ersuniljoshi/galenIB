@@ -1,0 +1,138 @@
+{
+  "testId" : "1-test-on-a-desktop-for-homepage-navigation-to-automationpage",
+  "name" : "Test on a Desktop for homepage navigation to automationpage",
+  "report" : {
+    "nodes" : [ {
+      "name" : "Click toggleButton on homepage",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "id: toggle",
+        "type" : "text"
+      } ],
+      "time" : 1485350962615,
+      "type" : "node"
+    }, {
+      "name" : "Click menuAutomation on automationpage",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "css:  #menu-item-1942>a",
+        "type" : "text"
+      } ],
+      "time" : 1485350962910,
+      "type" : "node"
+    }, {
+      "name" : "Check layout: specs/auto.gspec included tags: desktop",
+      "status" : "info",
+      "time" : 1485350968444,
+      "includedTags" : [ "desktop" ],
+      "sections" : [ {
+        "name" : "Main section",
+        "place" : {
+          "filePath" : "specs/auto.gspec",
+          "lineNumber" : 3
+        },
+        "objects" : [ {
+          "name" : "gain-text",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/auto.gspec",
+              "lineNumber" : 6
+            },
+            "name" : "below automation-text 30 to 40px",
+            "highlight" : [ "gain-text", "automation-text" ]
+          } ]
+        }, {
+          "name" : "automation-text",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/auto.gspec",
+              "lineNumber" : 8
+            },
+            "name" : "aligned horizontally all gain-text offset 236px",
+            "highlight" : [ "automation-text", "gain-text" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/auto.gspec",
+              "lineNumber" : 9
+            },
+            "name" : "css background-color is \"rgba(0, 0, 0, 0)\"",
+            "highlight" : [ "automation-text" ]
+          } ]
+        }, {
+          "name" : "auto-engg",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/auto.gspec",
+              "lineNumber" : 11
+            },
+            "name" : "css font-family contains \"Avenir\"",
+            "highlight" : [ "auto-engg" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/auto.gspec",
+              "lineNumber" : 25
+            },
+            "name" : "css font-family contains \"Avenir\"",
+            "highlight" : [ "auto-engg" ]
+          } ]
+        }, {
+          "name" : "para",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/auto.gspec",
+              "lineNumber" : 16
+            },
+            "name" : "css font-family contains \"Avenir\"",
+            "highlight" : [ "para" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/auto.gspec",
+              "lineNumber" : 17
+            },
+            "name" : "css background-color is \"rgba(0, 0, 0, 0)\"",
+            "highlight" : [ "para" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/auto.gspec",
+              "lineNumber" : 30
+            },
+            "name" : "css font-family contains \"Avenir\"",
+            "highlight" : [ "para" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/auto.gspec",
+              "lineNumber" : 31
+            },
+            "name" : "css background-color is \"rgba(0, 0, 0, 0)\"",
+            "highlight" : [ "para" ]
+          } ]
+        } ]
+      } ],
+      "objects" : {
+        "automation-text" : {
+          "area" : [ 636, 230, 568, 198 ]
+        },
+        "para" : {
+          "area" : [ 36, 64, 178, 4 ]
+        },
+        "gain-text" : {
+          "area" : [ 395, 466, 1050, 46 ]
+        },
+        "auto-engg" : {
+          "area" : [ 588, 1457, 663, 48 ]
+        }
+      },
+      "screenshot" : "layout-1-screenshot.png",
+      "type" : "layout"
+    } ]
+  }
+}

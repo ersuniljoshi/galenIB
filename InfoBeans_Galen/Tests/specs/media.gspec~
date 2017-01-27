@@ -1,0 +1,7 @@
+@objects
+    media-header    .container.textcenter>h2>strong
+    media-more-header    .container.textcenter>p
+= Main section =
+    @on desktop
+        media-header:
+	    aligned horizontally all media-more-header

@@ -1,0 +1,19 @@
+@objects
+    header_logo    .retina
+    next-slide    #nextSlide
+    para    #home-content1>p
+    header-div    #home-content1>p
+    home-line    .lines
+    next-slide-color    a#nextSlide.next
+    automation-text    .container.textcenter>h2>strong
+    gain-text    .container.textcenter>p
+    auto-engg    .container.clearfix>h3>b
+    #contact-text    #automation-engg-contact>strong
+    para    .left>p
+    storage-text    .container.textcenter>h2>strong
+    storage-more-text    .left>p
+    toggle    #toggle
+    service-text    .container.textcenter>h2>strong
+    service-more-text    .container.textcenter>p
+    media-header    .container.textcenter>h2>strong
+    media-more-header    .container.textcenter>p

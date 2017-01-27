@@ -1,0 +1,18 @@
+{
+  "tests" : [ {
+    "name" : "Test on a Desktop for homepage",
+    "startedAt" : 1485351321050,
+    "endedAt" : 1485351342859,
+    "failed" : false,
+    "statistic" : {
+      "passed" : 3,
+      "errors" : 0,
+      "warnings" : 0,
+      "total" : 3
+    },
+    "testId" : "1-test-on-a-desktop-for-homepage",
+    "groups" : [ ],
+    "failed" : false,
+    "duration" : 21809
+  } ]
+}

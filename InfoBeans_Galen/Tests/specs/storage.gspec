@@ -1,0 +1,14 @@
+@import locator.gspec
+
+= Main section =
+    @on desktop
+	storage-text:
+	    css font-family contains "Avenir"
+	    #css font-size is "99.84px"
+	    aligned horizontally all storage-more-text offset 194px
+	    text is "Storage & Virtualization"
+    @on mobile
+	storage-text:
+	    css font-family contains "Avenir"
+	    aligned horizontally all storage-more-text offset 194px
+	    text is "Storage & Virtualization"
