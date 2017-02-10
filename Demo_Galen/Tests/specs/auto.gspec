@@ -1,0 +1,32 @@
+@import locator.gspec
+
+= Main section =
+    @on desktop
+        gain-text:
+            below automation-text 30 to 40px
+        automation-text:
+            #aligned horizontally all gain-text offset 236px
+            #css background-color is "rgba(0, 0, 0, 0)"
+	    auto-engg:
+	        css font-family contains "Avenir"
+            #contact-text:
+	        #css font-family contains "Avenir"
+	        #css background-color is "rgb(255,​ 255,​ 255)" 
+	    para:
+	        css font-family contains "Avenir"
+	        #css background-color is "rgba(0, 0, 0, 0)" 
+        
+    @on mobile
+        automation-text:
+            aligned horizontally all gain-text offset 236px
+            #css background-color is "rgba(0, 0, 0, 0)"
+		auto-engg:
+	    	css font-family contains "Avenir"
+        	#contact-text:
+	    	#css font-family contains "Avenir"
+	    	#css background-color is "rgb(255,​ 255,​ 255)" 
+		para:
+	    	css font-family contains "Avenir"
+	    	#css background-color is "rgba(0, 0, 0, 0)" 
+	    
+	    

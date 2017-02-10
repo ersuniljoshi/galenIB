@@ -1,0 +1,6 @@
+@import locator.gspec
+
+= Main Section =
+    @on desktop
+        
+        
