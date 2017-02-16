@@ -1,0 +1,6 @@
+@import locator.gspec
+
+= Main section =
+    @on desktop
+        media-header:
+	        text is "Media & Publishing"

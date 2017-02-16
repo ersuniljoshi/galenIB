@@ -1,0 +1,7 @@
+@import locator.gspec
+
+= Main section =
+    @on desktop
+        service-text:
+            text is "ServiceNow Implementation"
+            above service-more-text 30 to 40px

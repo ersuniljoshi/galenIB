@@ -1,0 +1,10 @@
+@import locator.gspec
+
+= Main section =
+    @on desktop
+        header_logo:
+            inside screen 0px top
+        next-slide:
+            below home-line 700 to 750px
+            color-scheme 0% black
+

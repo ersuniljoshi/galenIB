@@ -1,0 +1,66 @@
+@@ Set 
+    run_in_grid selenium grid http://localhost:4444/wd/hub
+    domain  http://infobeans.com
+
+@@ table devices
+    | deviceName | size     |
+    | Mobile    | 1500x800  |
+    | Desktop    | 1866x1000 |
+
+@@ table browser
+    | browser  |
+    | firefox  |
+    | chrome   |
+
+@@ parameterized using devices
+@@ parameterized using browser
+HomePage on ${deviceName} device and size ${size} ${browser}
+    ${run_in_grid} --page http://infobeans.com --browser ${browser} --size ${size}  --platform "LINUX"
+        check /home/anujita/GalenFramework/Demo_Galen/Tests/specs/check_header.gspec
+
+@@ parameterized using devices
+@@ parameterized using browser
+ApplyPage on ${deviceName} device and size ${size} ${browser}
+    ${run_in_grid} --page http://infobeans.com --browser ${browser} --size ${size}  --platform "LINUX"
+        run /home/anujita/GalenFramework/Demo_Galen/Tests/pages/home.js
+        run /home/anujita/GalenFramework/Demo_Galen/Tests/pages/applypage.js
+
+@@ parameterized using devices
+@@ parameterized using browser
+StoragePage on ${deviceName} device and size ${size} ${browser}
+    ${run_in_grid} --page http://infobeans.com --browser ${browser} --size ${size}  --platform "LINUX"
+        run /home/anujita/GalenFramework/Demo_Galen/Tests/pages/home.js
+        run /home/anujita/GalenFramework/Demo_Galen/Tests/pages/storage.js
+        check /home/anujita/GalenFramework/Demo_Galen/Tests/specs/storage.gspec
+
+@@ parameterized using devices
+@@ parameterized using browser
+MediaPage on ${deviceName} device and size ${size} ${browser}
+    ${run_in_grid} --page http://infobeans.com --browser ${browser} --size ${size}  --platform "LINUX"
+        run /home/anujita/GalenFramework/Demo_Galen/Tests/pages/home.js
+        run /home/anujita/GalenFramework/Demo_Galen/Tests/pages/media.js
+        check /home/anujita/GalenFramework/Demo_Galen/Tests/specs/media.gspec  
+      
+@@ parameterized using devices
+@@ parameterized using browser
+AutomationPage on ${deviceName} device and size ${size} ${browser}
+   ${run_in_grid} --page http://infobeans.com --browser ${browser} --size ${size}  --platform "LINUX"
+        run /home/anujita/GalenFramework/Demo_Galen/Tests/pages/home.js
+        run /home/anujita/GalenFramework/Demo_Galen/Tests/pages/automation.js
+        check /home/anujita/GalenFramework/Demo_Galen/Tests/specs/auto.gspec
+
+@@ parameterized using devices
+@@ parameterized using browser
+EcommercePage on ${deviceName} device and size ${size} ${browser}
+    ${run_in_grid} --page http://infobeans.com --browser ${browser} --size ${size}  --platform "LINUX"
+        run /home/anujita/GalenFramework/Demo_Galen/Tests/pages/home.js
+        run /home/anujita/GalenFramework/Demo_Galen/Tests/pages/ecomm.js
+        check /home/anujita/GalenFramework/Demo_Galen/Tests/specs/ecomm.gspec
+
+@@ parameterized using devices
+@@ parameterized using browser
+ServicePage on ${deviceName} device and size ${size} ${browser}
+    ${run_in_grid} --page http://infobeans.com --browser ${browser} --size ${size}  --platform "LINUX"
+        run /home/anujita/GalenFramework/Demo_Galen/Tests/pages/home.js
+        run /home/anujita/GalenFramework/Demo_Galen/Tests/pages/service.js
+        check /home/anujita/GalenFramework/Demo_Galen/Tests/specs/service.gspec
