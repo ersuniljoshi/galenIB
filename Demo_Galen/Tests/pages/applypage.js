@@ -8,6 +8,7 @@ this.applynowpage = $page("applynowpage",{
 	applybutton: "xpath: .//*[@id='submit-wrap']/input[1]" ,
 });
 var applynowPage = new applynowpage(driver);
+applynowPage.menuApply.click();
 applynowPage.firstname.typeText("Anujita");
 applynowPage.lastname.typeText("Sinha");
 applynowPage.email.typeText("anujita022@gmail.com");

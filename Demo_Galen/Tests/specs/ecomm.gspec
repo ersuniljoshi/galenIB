@@ -1,0 +1,9 @@
+@import locator.gspec
+
+= Main section =
+    @on desktop
+        
+        ecomm-header:
+            text is "eCommerce"           
+        ecomm-more-subheader:
+            below ecomm-header 30 to 40px
