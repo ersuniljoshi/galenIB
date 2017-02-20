@@ -1,0 +1,43 @@
+@@ Set 
+    run_in_grid selenium grid http://localhost:4444/wd/hub
+    domain  http://infobeans.com
+
+
+homepage_in_firefox_Browser
+    ${run_in_grid}  --page "${domain}"  --browser firefox  --dc.version 46.0  --dc.platform linux  --size 1866x1000 
+        check /home/anujita/GalenFramework/Demo_Galen/Tests/specs/check_header.gspec
+
+applynowpage_in_chrome_Browser
+    ${run_in_grid}  --page "${domain}"  --browser chrome  --dc.version 55.0  --dc.platform linux  --size 1866x1000 
+        run /home/anujita/GalenFramework/Demo_Galen/Tests/pages/home.js
+        run /home/anujita/GalenFramework/Demo_Galen/Tests/pages/applypage.js
+
+storagepage_in_firefox_Browser
+    ${run_in_grid}  --page "${domain}"  --browser firefox  --dc.version 46.0  --dc.platform linux  --size 1866x1000 
+        run /home/anujita/GalenFramework/Demo_Galen/Tests/pages/home.js
+        run /home/anujita/GalenFramework/Demo_Galen/Tests/pages/storage.js
+        check /home/anujita/GalenFramework/Demo_Galen/Tests/specs/storage.gspec
+
+mediapage_in_chrome_Browser
+    ${run_in_grid}  --page "${domain}"  --browser chrome  --dc.version 55.0  --dc.platform linux  --size 1866x1000 
+        run /home/anujita/GalenFramework/Demo_Galen/Tests/pages/home.js
+        run /home/anujita/GalenFramework/Demo_Galen/Tests/pages/media.js
+        check /home/anujita/GalenFramework/Demo_Galen/Tests/specs/media.gspec        
+
+automationpage_in_chrome_Browser
+    ${run_in_grid}  --page "${domain}"  --browser chrome  --dc.version 55.0  --dc.platform linux  --size 1866x1000 
+        run /home/anujita/GalenFramework/Demo_Galen/Tests/pages/home.js
+        run /home/anujita/GalenFramework/Demo_Galen/Tests/pages/automation.js
+        check /home/anujita/GalenFramework/Demo_Galen/Tests/specs/auto.gspec
+
+ecommercepage_in_firefox_Browser
+    ${run_in_grid}  --page "${domain}"  --browser firefox  --dc.version 46.0  --dc.platform linux  --size 1866x1000
+        run /home/anujita/GalenFramework/Demo_Galen/Tests/pages/home.js
+        run /home/anujita/GalenFramework/Demo_Galen/Tests/pages/ecomm.js
+        check /home/anujita/GalenFramework/Demo_Galen/Tests/specs/ecomm.gspec
+
+servicepage_in_firefox_Browser
+    ${run_in_grid}  --page "${domain}"  --browser firefox  --dc.version 46.0  --dc.platform linux  --size 1866x1000
+        run /home/anujita/GalenFramework/Demo_Galen/Tests/pages/home.js
+        run /home/anujita/GalenFramework/Demo_Galen/Tests/pages/service.js
+        check /home/anujita/GalenFramework/Demo_Galen/Tests/specs/service.gspec
