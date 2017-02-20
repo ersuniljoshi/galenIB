@@ -2,7 +2,7 @@
     run_in_grid selenium grid http://localhost:4444/wd/hub
     domain  http://infobeans.com
 
-servicepage_in_firefox_Browser
+careerpage_in_firefox_Browser
     ${run_in_grid}  --page "${domain}"  --browser firefox  --dc.version 46.0  --dc.platform linux  --size 1866x1000
         run /home/anujita/GalenFramework/Demo_Galen/Tests/pages/home.js
         run /home/anujita/GalenFramework/Demo_Galen/Tests/pages/career.js
