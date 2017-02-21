@@ -7,3 +7,7 @@ careerpage_in_firefox_Browser
         run /home/anujita/GalenFramework/Demo_Galen/Tests/pages/home.js
         run /home/anujita/GalenFramework/Demo_Galen/Tests/pages/career.js
         check /home/anujita/GalenFramework/Demo_Galen/Tests/specs/career.gspec
+
+homepage_in_firefox_Browser
+    ${run_in_grid}  --page "${domain}"  --browser firefox  --dc.version 46.0  --dc.platform linux  --size 1866x1000 
+        check /home/anujita/GalenFramework/Demo_Galen/Tests/specs/check_header.gspec
