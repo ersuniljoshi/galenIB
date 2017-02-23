@@ -3,4 +3,5 @@
 = Main section =
     @on desktop
         media-header:
-	        text is "Media & Publishing"	        
+	        text is "Media & Publishing"
+	        
