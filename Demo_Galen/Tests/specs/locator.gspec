@@ -22,4 +22,3 @@
     ecomm-more-subheader    .container.textcenter>p
     h2div    .//*[@id='generic']/div/div/h2/strong
     image-software    .showhover.custom-software-my-img-class
-    
