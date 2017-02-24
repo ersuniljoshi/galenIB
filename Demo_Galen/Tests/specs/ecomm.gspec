@@ -2,9 +2,18 @@
 
 = Main section =
     @on desktop
+<<<<<<< HEAD
         
         ecomm-header:
             text is "eCommerce"           
         ecomm-more-subheader:
             below ecomm-header 30 to 40px
           
+=======
+
+        ecomm-header:
+            text is "eCommerce"
+        ecomm-more-subheader:
+            below ecomm-header 30 to 40px
+
+>>>>>>> f545078069ee6309cfd86f2c799a17fefa75e70e
