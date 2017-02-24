@@ -1,5 +1,6 @@
+load("specs/locator.gspec");
 this.mediapage = $page("mediapage", {
-	menuMedia: "#menu-item-3264>a"
+	menuMedia: "media_menu"
 });
 var mediaPage = new mediapage(driver);
 mediaPage.menuMedia.click();

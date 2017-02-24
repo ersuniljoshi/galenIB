@@ -1,6 +1,6 @@
-
+load("specs/locator.gspec");
 this.storagepage = $page("storagepage", {
-	menuStorage: " #menu-item-3266>a"
+	menuStorage: "storage_menu"
 });
 var storagePage = new storagepage(driver);
 storagePage.menuStorage.click();

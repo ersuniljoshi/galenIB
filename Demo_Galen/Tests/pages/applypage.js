@@ -1,11 +1,11 @@
-
+load("specs/locator.gspec");
 this.applynowpage = $page("applynowpage",{
-  menuApply: "#menu-item-1750>a" ,
-	firstname: "xpath: .//input[@id='Ffirstname']" ,
-	lastname: "xpath: .//input[@id='Flastname']" ,
-	email: "xpath: .//*[@id='wpcf7-f2120-p40-o1']/form/ul/li[3]/span/input" ,
-	phone: "xpath: .//*[@id='wpcf7-f2120-p40-o1']/form/ul/li[4]/span/input" ,
-	applybutton: "xpath: .//*[@id='submit-wrap']/input[1]" ,
+  menuApply: "apply_menu" ,
+	firstname: "xpath: apply_fn" ,
+	lastname: "xpath: apply_sn" ,
+	email: "xpath: apply_email" ,
+	phone: "xpath: apply_ph" ,
+	applybutton: "xpath: apply_btn" ,
 });
 var applynowPage = new applynowpage(driver);
 applynowPage.menuApply.click();

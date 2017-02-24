@@ -22,3 +22,14 @@
     ecomm-more-subheader    .container.textcenter>p
     h2div    .//*[@id='generic']/div/div/h2/strong
     image-software    .showhover.custom-software-my-img-class
+    apply_fn    xpath    .//input[@id='Ffirstname']
+    apply_sn    xpath    .//input[@id='Flastname']
+    apply_email    xpath    .//*[@id='wpcf7-f2120-p40-o1']/form/ul/li[3]/span/input
+    apply_ph    xpath    .//*[@id='wpcf7-f2120-p40-o1']/form/ul/li[4]/span/input
+    apply_btn    xpath    .//*[@id='submit-wrap']/input[1]
+    apply_menu    #menu-item-1750>a
+    auto_menu    #menu-item-1942>a
+    ecom_menu    #menu-item-3263>a
+    media_menu    #menu-item-3264>a
+    service_menu    #menu-item-3750>a
+    storage_menu    #menu-item-3266>a
