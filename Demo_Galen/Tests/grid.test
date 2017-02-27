@@ -5,39 +5,39 @@
 
 homepage_in_firefox_Browser
     ${run_in_grid}  --page "${domain}"  --browser firefox  --dc.version 46.0  --dc.platform linux  --size 1866x1000 
-        check /Demo_Galen/Tests/specs/check_header.gspec
+        check specs/check_header.gspec
 
 applynowpage_in_chrome_Browser
     ${run_in_grid}  --page "${domain}"  --browser chrome  --dc.version 55.0  --dc.platform linux  --size 1866x1000 
-        run /Demo_Galen/Tests/pages/home.js
-        run /Demo_Galen/Tests/pages/applypage.js
+        run pages/home.js
+        run pages/applypage.js
 
 storagepage_in_firefox_Browser
     ${run_in_grid}  --page "${domain}"  --browser firefox  --dc.version 46.0  --dc.platform linux  --size 1866x1000 
-        run /Demo_Galen/Tests/pages/home.js
-        run /Demo_Galen/Tests/pages/storage.js
-        check /Demo_Galen/Tests/specs/storage.gspec
+        run pages/home.js
+        run pages/storage.js
+        check specs/storage.gspec
 
 mediapage_in_chrome_Browser
     ${run_in_grid}  --page "${domain}"  --browser chrome  --dc.version 55.0  --dc.platform linux  --size 1866x1000 
-        run /Demo_Galen/Tests/pages/home.js
-        run /Demo_Galen/Tests/pages/media.js
-        check /Demo_Galen/Tests/specs/media.gspec        
+        run pages/home.js
+        run pages/media.js
+        check specs/media.gspec        
 
 automationpage_in_chrome_Browser
     ${run_in_grid}  --page "${domain}"  --browser chrome  --dc.version 55.0  --dc.platform linux  --size 1866x1000 
-        run /Demo_Galen/Tests/pages/home.js
-        run /Demo_Galen/Tests/pages/automation.js
-        check /Demo_Galen/Tests/specs/auto.gspec
+        run pages/home.js
+        run pages/automation.js
+        check specs/auto.gspec
 
 ecommercepage_in_firefox_Browser
     ${run_in_grid}  --page "${domain}"  --browser firefox  --dc.version 46.0  --dc.platform linux  --size 1866x1000
-        run /Demo_Galen/Tests/pages/home.js
-        run /Demo_Galen/Tests/pages/ecomm.js
-        check /Demo_Galen/Tests/specs/ecomm.gspec
+        run pages/home.js
+        run pages/ecomm.js
+        check specs/ecomm.gspec
 
 servicepage_in_firefox_Browser
     ${run_in_grid}  --page "${domain}"  --browser firefox  --dc.version 46.0  --dc.platform linux  --size 1866x1000
-        run /Demo_Galen/Tests/pages/home.js
-        run /Demo_Galen/Tests/pages/service.js
-        check /Demo_Galen/Tests/specs/service.gspec
+        run pages/home.js
+        run pages/service.js
+        check specs/service.gspec
