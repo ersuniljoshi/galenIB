@@ -1,6 +1,6 @@
 
 this.applynowpage = $page("applynowpage",{
-  menuApply: "#menu-item-1750>a" ,
+  menuApply: "#menu-item-4065>a" ,
 	firstname: "xpath: .//input[@id='Ffirstname']" ,
 	lastname: "xpath: .//input[@id='Flastname']" ,
 	email: "xpath: .//*[@id='wpcf7-f2120-p40-o1']/form/ul/li[3]/span/input" ,

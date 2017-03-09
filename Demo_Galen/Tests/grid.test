@@ -7,10 +7,10 @@ homepage_in_firefox_Browser
     ${run_in_grid}  --page "${domain}"  --browser firefox  --dc.version 46.0  --dc.platform linux  --size 1866x1000 
         check ./specs/check_header.gspec
 
-applynowpage_in_chrome_Browser
-    ${run_in_grid}  --page "${domain}"  --browser chrome  --dc.version 55.0  --dc.platform linux  --size 1866x1000 
-        run ./pages/home.js
-        run ./pages/applypage.js
+#applynowpage_in_chrome_Browser
+    #${run_in_grid}  --page "${domain}"  --browser chrome  --dc.version 55.0  --dc.platform linux  --size 1866x1000 
+        #run ./pages/home.js
+        #run ./pages/applypage.js
 
 storagepage_in_firefox_Browser
     ${run_in_grid}  --page "${domain}"  --browser firefox  --dc.version 46.0  --dc.platform linux  --size 1866x1000 
