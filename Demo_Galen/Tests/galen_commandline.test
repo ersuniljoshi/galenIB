@@ -1,0 +1,45 @@
+homepage_test
+    jsfactory  mydriver.js  ${mode}  ${browser}  ${version}  ${platform}
+        open http://infobeans.com/  
+        resize 1866x1000 
+        check ./specs/check_header.gspec  --include "desktop"
+
+automation_test
+    jsfactory  mydriver.js  ${mode}  ${browser}  ${version}  ${platform}
+        open http://infobeans.com/   
+        resize 1866x1000 
+        run ./pages/home.js
+        run ./pages/automation.js
+        check ./specs/auto.gspec  --include "desktop"
+    
+storagepage_test
+    jsfactory  mydriver.js  ${mode}  ${browser}  ${version}  ${platform}
+        open http://infobeans.com/   
+        resize 1866x1000 
+        run ./pages/home.js
+        run ./pages/storage.js
+        check ./specs/storage.gspec  --include "desktop"
+
+mediapage_test
+    jsfactory  mydriver.js  ${mode}  ${browser}  ${version}  ${platform}
+        open http://infobeans.com/   
+        resize 1866x1000 
+        run ./pages/home.js
+        run ./pages/media.js
+        check ./specs/media.gspec  --include "desktop"
+
+ecommercepage_test
+    jsfactory  mydriver.js  ${mode}  ${browser}  ${version}  ${platform}
+        open http://infobeans.com/   
+        resize 1866x1000 
+        run ./pages/home.js
+        run ./pages/ecomm.js
+        check ./specs/ecomm.gspec  --include "desktop"
+
+servicepage_test
+    jsfactory  mydriver.js  ${mode}  ${browser}  ${version}  ${platform}
+        open http://infobeans.com/   
+        resize 1866x1000 
+        run ./pages/home.js
+        run ./pages/service.js
+        check ./specs/service.gspec  --include "desktop"
