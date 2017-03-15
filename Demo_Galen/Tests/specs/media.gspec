@@ -4,4 +4,4 @@
     @on desktop
         media-header:
 	        text is "Media & Publishing"
-	        #aligned horizontally centered media-more-header offset 111px
+	        

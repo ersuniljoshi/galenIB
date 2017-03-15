@@ -1,4 +1,3 @@
-
 this.storagepage = $page("storagepage", {
 	menuStorage: " #menu-item-3266>a"
 });

@@ -1,4 +1,3 @@
-
 this.applynowpage = $page("applynowpage",{
   menuApply: "#menu-item-4065>a" ,
 	firstname: "xpath: .//input[@id='Ffirstname']" ,
@@ -14,4 +13,3 @@ applynowPage.lastname.typeText("Sinha");
 applynowPage.email.typeText("anujita022@gmail.com");
 applynowPage.phone.typeText("1234567890");
 applynowPage.applybutton.click();
-	
