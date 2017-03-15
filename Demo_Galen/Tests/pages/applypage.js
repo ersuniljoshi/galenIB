@@ -8,8 +8,8 @@ this.applynowpage = $page("applynowpage",{
 });
 var applynowPage = new applynowpage(driver);
 applynowPage.menuApply.click();
-applynowPage.firstname.typeText("Anujita");
-applynowPage.lastname.typeText("Sinha");
-applynowPage.email.typeText("anujita022@gmail.com");
+applynowPage.firstname.typeText("Aaaa");
+applynowPage.lastname.typeText("Sssss");
+applynowPage.email.typeText("aaaa@gmail.com");
 applynowPage.phone.typeText("1234567890");
 applynowPage.applybutton.click();
