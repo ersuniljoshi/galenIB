@@ -35,9 +35,11 @@ galen test check_header.test.js -Dwebdriver=/home/xxx/Downloads/geckodriver -Dbr
 ```
 galen test grid.test --junitreport "junit-report.xml" --htmlreport gridresult
 ```
+## Run tests by driving all the parameters command line driven in Chrome:
+```
 galen test myscript.test -Dmode=grid/local -Dversion=55.0 -Dplatform=linux -Dbrowser=chrome --junitreport "junit-report.xml" --htmlreport projectreport
 ```
-## Run Scripts in Galen Framework in Firefox Browser:
+## Run tests by driving all the parameters command line driven in Firefox:
 ```
 galen test myscript.test -Dmode=grid/local -Dversion=46.0 -Dplatform=linux -Dbrowser=firefox --junitreport "junit-report.xml" --htmlreport projectreport
 ```
