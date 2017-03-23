@@ -1,4 +1,8 @@
+<<<<<<< HEAD
  # galenIB
+=======
+# galenIB
+>>>>>>> master
 
 ## Overview of Galen Framework:
 
@@ -25,6 +29,7 @@ $.webdriver.gecko.driver=/path/to/your/geckodriver
 ```
 ## Run Scripts in Galen Framework in Chrome Browser:
 ```
+<<<<<<< HEAD
 galen test check_header.test.js -Dwebdriver=/home/xxx/Downloads/chromedriver -Dbrowser=chrome --htmlreport reports
 ```
 ## Run Scripts in Galen Framework in Firefox Browser:
@@ -38,3 +43,14 @@ galen test grid.test --junitreport "junit-report.xml" --htmlreport gridresult
 ### For more details refer to the following link:
 
 [Documentation of Galen Framework](http://galenframework.com/docs/all/)
+=======
+galen test myscript.test -Dmode=grid/local -Dversion=55.0 -Dplatform=linux -Dbrowser=chrome --junitreport "junit-report.xml" --htmlreport projectreport
+```
+## Run Scripts in Galen Framework in Firefox Browser:
+```
+galen test myscript.test -Dmode=grid/local -Dversion=46.0 -Dplatform=linux -Dbrowser=firefox --junitreport "junit-report.xml" --htmlreport projectreport
+```
+### For more details refer to the following link:
+
+[Documentation of Galen Framework](http://galenframework.com/docs/all/)
+>>>>>>> master
