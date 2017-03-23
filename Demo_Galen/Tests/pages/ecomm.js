@@ -1,6 +1,5 @@
-load("specs/locator.gspec");
 this.ecommpage = $page("ecommpage" , {
-	menuEcomm: "ecom_menu"
+	menuEcomm: "#menu-item-3263>a"
 });
 var ecommPage = new ecommpage(driver);
 ecommPage.menuEcomm.click();

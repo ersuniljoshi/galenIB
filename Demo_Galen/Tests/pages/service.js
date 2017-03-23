@@ -1,6 +1,5 @@
-load("specs/locator.gspec");
 this.servicepage = $page("servicepage", {
-	menuService: "service_menu"
+	menuService: " #menu-item-3815>a"
 });
 var servicePage = new servicepage(driver);
 servicePage.menuService.click();

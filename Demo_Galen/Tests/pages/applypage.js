@@ -1,16 +1,15 @@
-load("specs/locator.gspec");
 this.applynowpage = $page("applynowpage",{
-  menuApply: "apply_menu" ,
-	firstname: "xpath: apply_fn" ,
-	lastname: "xpath: apply_sn" ,
-	email: "xpath: apply_email" ,
-	phone: "xpath: apply_ph" ,
-	applybutton: "xpath: apply_btn" ,
+  menuApply: "#menu-item-4065>a" ,
+	firstname: "xpath: .//input[@id='Ffirstname']" ,
+	lastname: "xpath: .//input[@id='Flastname']" ,
+	email: "xpath: .//*[@id='wpcf7-f2120-p40-o1']/form/ul/li[3]/span/input" ,
+	phone: "xpath: .//*[@id='wpcf7-f2120-p40-o1']/form/ul/li[4]/span/input" ,
+	applybutton: "xpath: .//*[@id='submit-wrap']/input[1]" ,
 });
 var applynowPage = new applynowpage(driver);
 applynowPage.menuApply.click();
-applynowPage.firstname.typeText("Abc");
-applynowPage.lastname.typeText("efg");
-applynowPage.email.typeText("abc@gmail.com");
+applynowPage.firstname.typeText("Aaaa");
+applynowPage.lastname.typeText("Sssss");
+applynowPage.email.typeText("aaaa@gmail.com");
 applynowPage.phone.typeText("1234567890");
 applynowPage.applybutton.click();

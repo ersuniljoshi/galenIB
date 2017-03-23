@@ -1,6 +1,5 @@
-load("./specs/locator.gspec");
 this.automationpage = $page("automationpage", {
-	menuAutomation: "auto_menu"
+	menuAutomation: "#menu-item-1942>a"
 });
 var automationPage = new automationpage(driver);
 automationPage.menuAutomation.click();
